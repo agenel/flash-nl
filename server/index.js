@@ -28,7 +28,7 @@ const authLimiter = rateLimit({
 // --- Auth Routes ---
 
 // Register
-app.post('/api/auth/register', authLimiter, (req, res) => {
+app.post('/api/auth/register', authLimiter, async (req, res) => {
     const { username, email, password } = req.body;
 
     if (!username || !email || !password) {
@@ -41,91 +41,35 @@ app.post('/api/auth/register', authLimiter, (req, res) => {
 
     const hash = bcrypt.hashSync(password, 8);
 
-    db.run("INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)", [username, email, hash], function (err) {
-        if (err) {
-            if (err.message.includes('UNIQUE')) {
-                return res.status(400).json({ error: "Email already exists" });
-            }
-            return res.status(500).json({ error: err.message });
+    try {
+        const user = await db.createUser(username, email, hash);
+        res.json({ message: "User created", user });
+    } catch (err) {
+        if (err.message && err.message.includes('UNIQUE') || (err.code && err.code === '23505')) {
+            return res.status(400).json({ error: "Email or Username already exists" });
         }
-
-        // Return user info (no password)
-        res.json({
-            message: "User created",
-            user: { id: this.lastID, username, email }
-        });
-    });
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // Login
-app.post('/api/auth/login', authLimiter, (req, res) => {
+app.post('/api/auth/login', authLimiter, async (req, res) => {
     const { identifier, password } = req.body;
 
     if (!identifier || !password) {
         return res.status(400).json({ error: "Username/Email and password required" });
     }
 
-    db.get("SELECT * FROM users WHERE email = ? OR username = ?", [identifier, identifier], (err, user) => {
-        if (err) return res.status(500).json({ error: err.message });
+    try {
+        const user = await db.findUserByIdentifier(identifier);
+
         if (!user) return res.status(404).json({ error: "User not found" });
 
         const isValid = bcrypt.compareSync(password, user.password_hash);
         if (!isValid) return res.status(401).json({ error: "Invalid password" });
 
-        fetchUserProgress(user, res);
-    });
-});
-
-// --- Data Routes ---
-
-// Get All Vocabulary
-app.get('/api/vocabulary', (req, res) => {
-    db.all("SELECT * FROM vocabulary", [], (err, rows) => {
-        if (err) return res.status(500).json({ error: err.message });
-        res.json({ message: "success", data: rows });
-    });
-});
-
-// Sync Progress
-app.post('/api/progress', (req, res) => {
-    const { userId, updates } = req.body;
-
-    if (!userId || !updates) {
-        res.status(400).json({ error: "Missing data" });
-        return;
-    }
-
-    const stmt = db.prepare("INSERT OR REPLACE INTO progress (user_id, vocab_id, level, in_word_bank, last_reviewed) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)");
-
-    db.serialize(() => {
-        db.run("BEGIN TRANSACTION");
-        updates.forEach(item => {
-            stmt.run(userId, item.vocabId, item.level, item.inWordBank ? 1 : 0);
-        });
-        db.run("COMMIT");
-        stmt.finalize();
-    });
-
-    res.json({ message: "Progress synced" });
-});
-
-// Helper
-function fetchUserProgress(user, res) {
-    db.all("SELECT * FROM progress WHERE user_id = ?", [user.id], (err, rows) => {
-        if (err) return res.status(500).json({ error: err.message });
-
-        const progressMap = {};
-        const wordBank = [];
-
-        rows.forEach(row => {
-            progressMap[row.vocab_id] = {
-                level: row.level,
-                lastReviewed: row.last_reviewed
-            };
-            if (row.in_word_bank) {
-                wordBank.push(row.vocab_id);
-            }
-        });
+        // Get Progress
+        const { progressMap, wordBank } = await db.getUserProgress(user.id);
 
         res.json({
             message: "success",
@@ -137,8 +81,44 @@ function fetchUserProgress(user, res) {
                 wordBank: wordBank
             }
         });
-    });
-}
+
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// --- Data Routes ---
+
+// Get All Vocabulary
+app.get('/api/vocabulary', async (req, res) => {
+    try {
+        const rows = await db.getAllVocabulary();
+        res.json({ message: "success", data: rows });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// Sync Progress
+app.post('/api/progress', async (req, res) => {
+    const { userId, updates } = req.body;
+
+    if (!userId || !updates) {
+        res.status(400).json({ error: "Missing data" });
+        return;
+    }
+
+    try {
+        await db.upsertProgressBatch(userId, updates);
+        res.json({ message: "Progress synced" });
+    } catch (err) {
+        console.error("Sync Error:", err);
+        res.status(500).json({ error: "Failed to sync" });
+    }
+});
+
+// Helper
+
 
 const server = app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
