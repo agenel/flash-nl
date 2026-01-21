@@ -1,0 +1,317 @@
+[
+    {
+        "dutch": "Beginnen",
+        "english": "To begin",
+        "sentence": "De film begint om acht uur.",
+        "sentence_trans": "The movie starts at eight o'clock.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Eindigen",
+        "english": "To end",
+        "sentence": "Hoe eindigt het boek?",
+        "sentence_trans": "How does the book end?",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Brengen",
+        "english": "To bring",
+        "sentence": "Ik breng je naar het station.",
+        "sentence_trans": "I will take (bring) you to the station.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Halen",
+        "english": "To fetch / get",
+        "sentence": "Ik ga brood halen.",
+        "sentence_trans": "I am going to get bread.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Kiezen",
+        "english": "To choose",
+        "sentence": "Je moet een kleur kiezen.",
+        "sentence_trans": "You have to choose a color.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Delen",
+        "english": "To share",
+        "sentence": "Willen jullie de taart delen?",
+        "sentence_trans": "Do you want to share the cake?",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Dragen",
+        "english": "To wear / carry",
+        "sentence": "Zij draagt een mooie jurk.",
+        "sentence_trans": "She is wearing a beautiful dress.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Durven",
+        "english": "To dare",
+        "sentence": "Durf je dat te vragen?",
+        "sentence_trans": "Do you dare to ask that?",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Hopen",
+        "english": "To hope",
+        "sentence": "Ik hoop dat het lekker is.",
+        "sentence_trans": "I hope that it is tasty.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Lachen",
+        "english": "To laugh",
+        "sentence": "Waarom lachen jullie?",
+        "sentence_trans": "Why are you laughing?",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Huilen",
+        "english": "To cry",
+        "sentence": "De baby huilt veel.",
+        "sentence_trans": "The baby cries a lot.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Proberen",
+        "english": "To try",
+        "sentence": "Ik zal het proberen.",
+        "sentence_trans": "I will try it.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Vergeten",
+        "english": "To forget",
+        "sentence": "Ik ben mijn sleutels vergeten.",
+        "sentence_trans": "I forgot my keys.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Onthouden",
+        "english": "To remember",
+        "sentence": "Ik kan die naam niet onthouden.",
+        "sentence_trans": "I cannot remember that name.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "De spiegel",
+        "english": "The mirror",
+        "sentence": "Kijk in de spiegel.",
+        "sentence_trans": "Look in the mirror.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De handdoek",
+        "english": "The towel",
+        "sentence": "Mag ik een schone handdoek?",
+        "sentence_trans": "May I have a clean towel?",
+        "category": "Household"
+    },
+    {
+        "dutch": "Het laken",
+        "english": "The sheet",
+        "sentence": "Ik verschoon de lakens.",
+        "sentence_trans": "I am changing the sheets.",
+        "category": "Household"
+    },
+    {
+        "dutch": "Het kussen",
+        "english": "The pillow",
+        "sentence": "Dit kussen is te zacht.",
+        "sentence_trans": "This pillow is too soft.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De kast",
+        "english": "The cupboard / closet",
+        "sentence": "De borden staan in de kast.",
+        "sentence_trans": "The plates are in the cupboard.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De stoel",
+        "english": "The chair",
+        "sentence": "Deze stoel zit lekker.",
+        "sentence_trans": "This chair is comfortable.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De tafel",
+        "english": "The table",
+        "sentence": "We eten aan tafel.",
+        "sentence_trans": "We eat at the table.",
+        "category": "Household"
+    },
+    {
+        "dutch": "Het raam",
+        "english": "The window",
+        "sentence": "Kan het raam open?",
+        "sentence_trans": "Can the window be opened?",
+        "category": "Household"
+    },
+    {
+        "dutch": "De deur",
+        "english": "The door",
+        "sentence": "Doe de deur dicht.",
+        "sentence_trans": "Close the door.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De trap",
+        "english": "The stairs",
+        "sentence": "Hij loopt de trap op.",
+        "sentence_trans": "He is walking up the stairs.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De muur",
+        "english": "The wall",
+        "sentence": "De muur is wit.",
+        "sentence_trans": "The wall is white.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De vloer",
+        "english": "The floor",
+        "sentence": "Er ligt iets op de vloer.",
+        "sentence_trans": "There is something on the floor.",
+        "category": "Household"
+    },
+    {
+        "dutch": "Schoonmaken",
+        "english": "To clean",
+        "sentence": "We moeten het huis schoonmaken.",
+        "sentence_trans": "We have to clean the house.",
+        "category": "Household"
+    },
+    {
+        "dutch": "Wassen",
+        "english": "To wash",
+        "sentence": "Ik ga mijn handen wassen.",
+        "sentence_trans": "I am going to wash my hands.",
+        "category": "Household"
+    },
+    {
+        "dutch": "De lente",
+        "english": "The spring",
+        "sentence": "De lente begint in maart.",
+        "sentence_trans": "Spring begins in March.",
+        "category": "Time"
+    },
+    {
+        "dutch": "De zomer",
+        "english": "The summer",
+        "sentence": "In de zomer is het warm.",
+        "sentence_trans": "In the summer it is warm.",
+        "category": "Time"
+    },
+    {
+        "dutch": "De herfst",
+        "english": "The autumn",
+        "sentence": "Het regent veel in de herfst.",
+        "sentence_trans": "It rains a lot in autumn.",
+        "category": "Time"
+    },
+    {
+        "dutch": "De winter",
+        "english": "The winter",
+        "sentence": "De winter is koud.",
+        "sentence_trans": "Winter is cold.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Het seizoen",
+        "english": "The season",
+        "sentence": "Dit is mijn favoriete seizoen.",
+        "sentence_trans": "This is my favorite season.",
+        "category": "Time"
+    },
+    {
+        "dutch": "De datum",
+        "english": "The date",
+        "sentence": "Welke datum is het vandaag?",
+        "sentence_trans": "What date is it today?",
+        "category": "Time"
+    },
+    {
+        "dutch": "De agenda",
+        "english": "The calendar/agenda",
+        "sentence": "Zet het in je agenda.",
+        "sentence_trans": "Put it in your agenda.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Noorden",
+        "english": "North",
+        "sentence": "Groningen ligt in het noorden.",
+        "sentence_trans": "Groningen is in the north.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Zuiden",
+        "english": "South",
+        "sentence": "Limburg ligt in het zuiden.",
+        "sentence_trans": "Limburg is in the south.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Westen",
+        "english": "West",
+        "sentence": "De zon gaat onder in het westen.",
+        "sentence_trans": "The sun sets in the west.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Oosten",
+        "english": "East",
+        "sentence": "De zon komt op in het oosten.",
+        "sentence_trans": "The sun rises in the east.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "De kaart",
+        "english": "The map",
+        "sentence": "Kijk op de kaart.",
+        "sentence_trans": "Look at the map.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "De afstand",
+        "english": "The distance",
+        "sentence": "De afstand is groot.",
+        "sentence_trans": "The distance is large.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Dichtbij",
+        "english": "Close by",
+        "sentence": "Het station is dichtbij.",
+        "sentence_trans": "The station is close by.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Ver weg",
+        "english": "Far away",
+        "sentence": "Is het ver weg?",
+        "sentence_trans": "Is it far away?",
+        "category": "Directions"
+    },
+    {
+        "dutch": "De wereld",
+        "english": "The world",
+        "sentence": "Ik wil de wereld zien.",
+        "sentence_trans": "I want to see the world.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "Het land",
+        "english": "The country",
+        "sentence": "Nederland beschouwt men als een klein land.",
+        "sentence_trans": "Making Netherlands considered a small country.",
+        "category": "Nature"
+    }
+]

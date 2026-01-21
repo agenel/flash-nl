@@ -1,0 +1,772 @@
+[
+    {
+        "dutch": "De broek",
+        "english": "The trousers",
+        "sentence": "Ik heb een nieuwe broek.",
+        "sentence_trans": "I have new trousers.",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De trui",
+        "english": "The sweater",
+        "sentence": "Deze trui is warm.",
+        "sentence_trans": "This sweater is warm.",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De jas",
+        "english": "The coat",
+        "sentence": "Trek je jas aan.",
+        "sentence_trans": "Put on your coat.",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De schoen",
+        "english": "The shoe",
+        "sentence": "Mijn schoenen zijn vies.",
+        "sentence_trans": "My shoes are dirty.",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "Het overhemd",
+        "english": "The shirt",
+        "sentence": "Hij draagt een wit overhemd.",
+        "sentence_trans": "He is wearing a white shirt.",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De jurk",
+        "english": "The dress",
+        "sentence": "Wat een mooie jurk!",
+        "sentence_trans": "What a beautiful dress!",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De rok",
+        "english": "The skirt",
+        "sentence": "Zij draagt vaak een rok.",
+        "sentence_trans": "She often wears a skirt.",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De sok",
+        "english": "The sock",
+        "sentence": "Waar is mijn andere sok?",
+        "sentence_trans": "Where is my other sock?",
+        "category": "Clothing"
+    },
+    {
+        "dutch": "De bril",
+        "english": "The glasses",
+        "sentence": "Ik ben mijn bril kwijt.",
+        "sentence_trans": "I lost my glasses.",
+        "category": "Accessories"
+    },
+    {
+        "dutch": "De tas",
+        "english": "The bag",
+        "sentence": "Mijn tas is zwaar.",
+        "sentence_trans": "My bag is heavy.",
+        "category": "Accessories"
+    },
+    {
+        "dutch": "Het hoofd",
+        "english": "The head",
+        "sentence": "Ik heb pijn in mijn hoofd.",
+        "sentence_trans": "I have a pain in my head.",
+        "category": "Body"
+    },
+    {
+        "dutch": "Het haar",
+        "english": "The hair",
+        "sentence": "Je haar zit goed.",
+        "sentence_trans": "Your hair looks good.",
+        "category": "Body"
+    },
+    {
+        "dutch": "Het oog",
+        "english": "The eye",
+        "sentence": "Hij heeft bruine ogen.",
+        "sentence_trans": "He has brown eyes.",
+        "category": "Body"
+    },
+    {
+        "dutch": "De neus",
+        "english": "The nose",
+        "sentence": "Mijn neus is koud.",
+        "sentence_trans": "My nose is cold.",
+        "category": "Body"
+    },
+    {
+        "dutch": "De mond",
+        "english": "The mouth",
+        "sentence": "Houd je mond.",
+        "sentence_trans": "Shut your mouth.",
+        "category": "Body"
+    },
+    {
+        "dutch": "Het oor",
+        "english": "The ear",
+        "sentence": "Ik heb pijn aan mijn oor.",
+        "sentence_trans": "I have an earache.",
+        "category": "Body"
+    },
+    {
+        "dutch": "De hand",
+        "english": "The hand",
+        "sentence": "Geef me een hand.",
+        "sentence_trans": "Give me a hand.",
+        "category": "Body"
+    },
+    {
+        "dutch": "De vinger",
+        "english": "The finger",
+        "sentence": "Ik sneed in mijn vinger.",
+        "sentence_trans": "I cut my finger.",
+        "category": "Body"
+    },
+    {
+        "dutch": "Het been",
+        "english": "The leg",
+        "sentence": "Mijn benen zijn moe.",
+        "sentence_trans": "My legs are tired.",
+        "category": "Body"
+    },
+    {
+        "dutch": "De voet",
+        "english": "The foot",
+        "sentence": "Ik ga te voet.",
+        "sentence_trans": "I am going on foot.",
+        "category": "Body"
+    },
+    {
+        "dutch": "De boom",
+        "english": "The tree",
+        "sentence": "Die boom is heel oud.",
+        "sentence_trans": "That tree is very old.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "De bloem",
+        "english": "The flower",
+        "sentence": "Kijk naar die mooie bloem.",
+        "sentence_trans": "Look at that beautiful flower.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "Het bos",
+        "english": "The forest",
+        "sentence": "We wandelen in het bos.",
+        "sentence_trans": "We are walking in the forest.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "De zee",
+        "english": "The sea",
+        "sentence": "Ik zwem graag in de zee.",
+        "sentence_trans": "I like swimming in the sea.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "Het strand",
+        "english": "The beach",
+        "sentence": "We gaan naar het strand.",
+        "sentence_trans": "We are going to the beach.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "De rivier",
+        "english": "The river",
+        "sentence": "De rivier is diep.",
+        "sentence_trans": "The river is deep.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "Het eiland",
+        "english": "The island",
+        "sentence": "Texel is een eiland.",
+        "sentence_trans": "Texel is an island.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "De berg",
+        "english": "The mountain",
+        "sentence": "Er zijn geen bergen in Nederland.",
+        "sentence_trans": "There are no mountains in the Netherlands.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "De lucht",
+        "english": "The sky / air",
+        "sentence": "De lucht is blauw.",
+        "sentence_trans": "The sky is blue.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "De ster",
+        "english": "The star",
+        "sentence": "Kijk naar de sterren.",
+        "sentence_trans": "Look at the stars.",
+        "category": "Nature"
+    },
+    {
+        "dutch": "Leren",
+        "english": "To learn",
+        "sentence": "Ik leer Nederlands.",
+        "sentence_trans": "I am learning Dutch.",
+        "category": "Education"
+    },
+    {
+        "dutch": "Studeren",
+        "english": "To study",
+        "sentence": "Hij studeert in Amsterdam.",
+        "sentence_trans": "He studies in Amsterdam.",
+        "category": "Education"
+    },
+    {
+        "dutch": "De leraar",
+        "english": "The teacher (male)",
+        "sentence": "De leraar legt het uit.",
+        "sentence_trans": "The teacher explains it.",
+        "category": "Education"
+    },
+    {
+        "dutch": "De student",
+        "english": "The student",
+        "sentence": "De student maakt huiswerk.",
+        "sentence_trans": "The student is doing homework.",
+        "category": "Education"
+    },
+    {
+        "dutch": "De school",
+        "english": "The school",
+        "sentence": "De school begint om half negen.",
+        "sentence_trans": "School starts at half past eight.",
+        "category": "Education"
+    },
+    {
+        "dutch": "Het boek",
+        "english": "The book",
+        "sentence": "Ik lees een spannend boek.",
+        "sentence_trans": "I am reading an exciting book.",
+        "category": "Education"
+    },
+    {
+        "dutch": "De pen",
+        "english": "The pen",
+        "sentence": "Mag ik je pen lenen?",
+        "sentence_trans": "May I borrow your pen?",
+        "category": "Education"
+    },
+    {
+        "dutch": "Schrijven",
+        "english": "To write",
+        "sentence": "Schrijf je naam op.",
+        "sentence_trans": "Write down your name.",
+        "category": "Education"
+    },
+    {
+        "dutch": "Het examen",
+        "english": "The exam",
+        "sentence": "Het examen was moeilijk.",
+        "sentence_trans": "The exam was difficult.",
+        "category": "Education"
+    },
+    {
+        "dutch": "De klas",
+        "english": "The class",
+        "sentence": "Er zitten twintig mensen in de klas.",
+        "sentence_trans": "There are twenty people in the class.",
+        "category": "Education"
+    },
+    {
+        "dutch": "Werken",
+        "english": "To work",
+        "sentence": "Ik werk bij een bank.",
+        "sentence_trans": "I work at a bank.",
+        "category": "Work"
+    },
+    {
+        "dutch": "Het kantoor",
+        "english": "The office",
+        "sentence": "Het kantoor is in het centrum.",
+        "sentence_trans": "The office is in the center.",
+        "category": "Work"
+    },
+    {
+        "dutch": "De baan",
+        "english": "The job",
+        "sentence": "Heb je een nieuwe baan?",
+        "sentence_trans": "Do you have a new job?",
+        "category": "Work"
+    },
+    {
+        "dutch": "Het salaris",
+        "english": "The salary",
+        "sentence": "Het salaris is goed.",
+        "sentence_trans": "The salary is good.",
+        "category": "Work"
+    },
+    {
+        "dutch": "Druk",
+        "english": "Busy",
+        "sentence": "Ik heb het erg druk.",
+        "sentence_trans": "I am very busy.",
+        "category": "Work"
+    },
+    {
+        "dutch": "De pauze",
+        "english": "The break",
+        "sentence": "Wanneer hebben we pauze?",
+        "sentence_trans": "When do we have a break?",
+        "category": "Work"
+    },
+    {
+        "dutch": "De baas",
+        "english": "The boss",
+        "sentence": "De baas is aardig.",
+        "sentence_trans": "The boss is nice.",
+        "category": "Work"
+    },
+    {
+        "dutch": "Het bedrijf",
+        "english": "The company",
+        "sentence": "Het bedrijf groeit snel.",
+        "sentence_trans": "The company is growing fast.",
+        "category": "Work"
+    },
+    {
+        "dutch": "De computer",
+        "english": "The computer",
+        "sentence": "Ik werk achter de computer.",
+        "sentence_trans": "I work behind the computer.",
+        "category": "Work"
+    },
+    {
+        "dutch": "De telefoon",
+        "english": "The phone",
+        "sentence": "De telefoon gaat.",
+        "sentence_trans": "The phone is ringing.",
+        "category": "Work"
+    },
+    {
+        "dutch": "Kopen",
+        "english": "To buy",
+        "sentence": "Ik ga brood kopen.",
+        "sentence_trans": "I am going to buy bread.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Verkopen",
+        "english": "To sell",
+        "sentence": "Hij verkoopt zijn auto.",
+        "sentence_trans": "He is selling his car.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Krijgen",
+        "english": "To get / receive",
+        "sentence": "Wat krijg je voor je verjaardag?",
+        "sentence_trans": "What are you getting for your birthday?",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Geven",
+        "english": "To give",
+        "sentence": "Geef het aan mij.",
+        "sentence_trans": "Give it to me.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Nemen",
+        "english": "To take",
+        "sentence": "Neem een koekje.",
+        "sentence_trans": "Take a cookie.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Zoeken",
+        "english": "To search",
+        "sentence": "Ik zoek mijn sleutels.",
+        "sentence_trans": "I am looking for my keys.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Vinden",
+        "english": "To find",
+        "sentence": "Ik kan het niet vinden.",
+        "sentence_trans": "I cannot find it.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Bellen",
+        "english": "To call",
+        "sentence": "Ik bel je later.",
+        "sentence_trans": "I call you later.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Horen",
+        "english": "To hear",
+        "sentence": "Hoor je dat geluid?",
+        "sentence_trans": "Do you hear that sound?",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Zien",
+        "english": "To see",
+        "sentence": "Ik zie je morgen.",
+        "sentence_trans": "I see you tomorrow.",
+        "category": "Verbs"
+    },
+    {
+        "dutch": "Groot",
+        "english": "Big",
+        "sentence": "Het huis is groot.",
+        "sentence_trans": "The house is big.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Klein",
+        "english": "Small",
+        "sentence": "De auto is klein.",
+        "sentence_trans": "The car is small.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Mooi",
+        "english": "Beautiful",
+        "sentence": "Wat een mooie bloem.",
+        "sentence_trans": "What a beautiful flower.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Lelijk",
+        "english": "Ugly",
+        "sentence": "Dat is een lelijk gebouw.",
+        "sentence_trans": "That is an ugly building.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Lang",
+        "english": "Long / Tall",
+        "sentence": "Hij is erg lang.",
+        "sentence_trans": "He is very tall.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Kort",
+        "english": "Short",
+        "sentence": "De film duurde kort.",
+        "sentence_trans": "The movie was short.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Oud",
+        "english": "Old",
+        "sentence": "Mijn opa is oud.",
+        "sentence_trans": "My grandpa is old.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Jong",
+        "english": "Young",
+        "sentence": "Zij is nog jong.",
+        "sentence_trans": "She is still young.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Nieuw",
+        "english": "New",
+        "sentence": "Ik heb nieuwe schoenen.",
+        "sentence_trans": "I have new shoes.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Goed",
+        "english": "Good",
+        "sentence": "Dat is een goed idee.",
+        "sentence_trans": "That includes a good idea.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Slecht",
+        "english": "Bad",
+        "sentence": "Het weer is slecht.",
+        "sentence_trans": "The weather is bad.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Warm",
+        "english": "Warm",
+        "sentence": "Het is warm vandaag.",
+        "sentence_trans": "It is warm today.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Koud",
+        "english": "Cold",
+        "sentence": "Heb je het koud?",
+        "sentence_trans": "Are you cold?",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Duur",
+        "english": "Expensive",
+        "sentence": "Die auto is te duur.",
+        "sentence_trans": "That car is too expensive.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Goedkoop",
+        "english": "Cheap",
+        "sentence": "In de uitverkoop is het goedkoop.",
+        "sentence_trans": "On sale it is cheap.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Snel",
+        "english": "Fast",
+        "sentence": "De trein gaat snel.",
+        "sentence_trans": "The train goes fast.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Langzaam",
+        "english": "Slow",
+        "sentence": "Slakken zijn langzaam.",
+        "sentence_trans": "Snails are slow.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Zwaar",
+        "english": "Heavy",
+        "sentence": "De doos is zwaar.",
+        "sentence_trans": "The box is heavy.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Licht",
+        "english": "Light",
+        "sentence": "De veer is licht.",
+        "sentence_trans": "The feather is light.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Moeilijk",
+        "english": "Difficult",
+        "sentence": "Nederlands is moeilijk.",
+        "sentence_trans": "Dutch is difficult.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Makkelijk",
+        "english": "Easy",
+        "sentence": "Dit spel is makkelijk.",
+        "sentence_trans": "This game is easy.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Vrolijk",
+        "english": "Cheerful",
+        "sentence": "Hij is altijd vrolijk.",
+        "sentence_trans": "He is always cheerful.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Verdrietig",
+        "english": "Sad",
+        "sentence": "Waarom ben je verdrietig?",
+        "sentence_trans": "Why are you sad?",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Belangrijk",
+        "english": "Important",
+        "sentence": "Dit is een belangrijke brief.",
+        "sentence_trans": "This is an important letter.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Interessant",
+        "english": "Interesting",
+        "sentence": "Dat is een interessant verhaal.",
+        "sentence_trans": "That is an interesting story.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Saai",
+        "english": "Boring",
+        "sentence": "De les was saai.",
+        "sentence_trans": "The lesson was boring.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Gezond",
+        "english": "Healthy",
+        "sentence": "Fruit is gezond.",
+        "sentence_trans": "Fruit is healthy.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Ziek",
+        "english": "Sick",
+        "sentence": "Ik ben een beetje ziek.",
+        "sentence_trans": "I am a little sick.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Veilig",
+        "english": "Safe",
+        "sentence": "Is het hier veilig?",
+        "sentence_trans": "Is it safe here?",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Gevaarlijk",
+        "english": "Dangerous",
+        "sentence": "Vuur is gevaarlijk.",
+        "sentence_trans": "Fire is dangerous.",
+        "category": "Adjectives"
+    },
+    {
+        "dutch": "Misschien",
+        "english": "Maybe",
+        "sentence": "Misschien kom ik.",
+        "sentence_trans": "Maybe I come.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Waarschijnlijk",
+        "english": "Probably",
+        "sentence": "Waarschijnlijk wel.",
+        "sentence_trans": "Probably yes.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Zeker",
+        "english": "Certainly",
+        "sentence": "Ik weet het zeker.",
+        "sentence_trans": "I know it certainly.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Ooit",
+        "english": "Ever",
+        "sentence": "Ben je er ooit geweest?",
+        "sentence_trans": "Have you ever been there?",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Nooit",
+        "english": "Never",
+        "sentence": "Ik heb dat nooit gedaan.",
+        "sentence_trans": "I never did that.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Vaak",
+        "english": "Often",
+        "sentence": "Ik ga vaak naar de bioscoop.",
+        "sentence_trans": "I often go to the cinema.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Soms",
+        "english": "Sometimes",
+        "sentence": "Soms eet ik pizza.",
+        "sentence_trans": "Sometimes I eat pizza.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Nu",
+        "english": "Now",
+        "sentence": "Ik moet nu weg.",
+        "sentence_trans": "I have to leave now.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Straks",
+        "english": "Later",
+        "sentence": "Tot straks!",
+        "sentence_trans": "See you later!",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Gisteren",
+        "english": "Yesterday",
+        "sentence": "Gisteren was het zondag.",
+        "sentence_trans": "Yesterday was Sunday.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Vandaag",
+        "english": "Today",
+        "sentence": "Vandaag is een mooie dag.",
+        "sentence_trans": "Today is a beautiful day.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Morgen",
+        "english": "Tomorrow",
+        "sentence": "Morgen ga ik werken.",
+        "sentence_trans": "Tomorrow I am going to work.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Hier",
+        "english": "Here",
+        "sentence": "Kom hier.",
+        "sentence_trans": "Come here.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Daar",
+        "english": "There",
+        "sentence": "Kijk daar!",
+        "sentence_trans": "Look there!",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Overal",
+        "english": "Everywhere",
+        "sentence": "Er ligt overal zand.",
+        "sentence_trans": "There is sand everywhere.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Nergens",
+        "english": "Nowhere",
+        "sentence": "Ik kan het nergens vinden.",
+        "sentence_trans": "I can find it nowhere.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Boven",
+        "english": "Upstairs / Above",
+        "sentence": "Hij is boven.",
+        "sentence_trans": "He is upstairs.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Beneden",
+        "english": "Downstairs / Below",
+        "sentence": "Zij is beneden.",
+        "sentence_trans": "She is downstairs.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Binnen",
+        "english": "Inside",
+        "sentence": "Kom binnen.",
+        "sentence_trans": "Come inside.",
+        "category": "Adverbs"
+    },
+    {
+        "dutch": "Buiten",
+        "english": "Outside",
+        "sentence": "Het regent buiten.",
+        "sentence_trans": "It is raining outside.",
+        "category": "Adverbs"
+    }
+]

@@ -1,0 +1,380 @@
+[
+    {
+        "dutch": "Hoe gaat het?",
+        "english": "How are you?",
+        "sentence": "Hallo, hoe gaat het met jou?",
+        "sentence_trans": "Hello, how are you doing?",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Lekker bezig",
+        "english": "Good job / Going well",
+        "sentence": "Je bent lekker bezig met Nederlands leren!",
+        "sentence_trans": "You are doing a good job learning Dutch!",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Helaas pindakaas",
+        "english": "Too bad / Unfortunately",
+        "sentence": "De winkel is dicht, helaas pindakaas.",
+        "sentence_trans": "The shop is closed, too bad.",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Dat geeft niet",
+        "english": "That doesn't matter / No problem",
+        "sentence": "Ben je te laat? Dat geeft niet.",
+        "sentence_trans": "Are you late? That's no problem.",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Geen probleem",
+        "english": "No problem",
+        "sentence": "Kan je me helpen? Geen probleem.",
+        "sentence_trans": "Can you help me? No problem.",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Eet smakelijk",
+        "english": "Enjoy your meal",
+        "sentence": "Het eten is klaar, eet smakelijk!",
+        "sentence_trans": "Dinner is ready, enjoy your meal!",
+        "category": "Food"
+    },
+    {
+        "dutch": "Alstu",
+        "english": "Here you go (formal/short)",
+        "sentence": "Hier is uw koffie, alstu.",
+        "sentence_trans": "Here is your coffee, here you go.",
+        "category": "Politeness"
+    },
+    {
+        "dutch": "Doei",
+        "english": "Bye",
+        "sentence": "Ik ga naar huis, doei!",
+        "sentence_trans": "I'm going home, bye!",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Tot ziens",
+        "english": "See you later (formal)",
+        "sentence": "Bedankt voor alles, tot ziens.",
+        "sentence_trans": "Thanks for everything, see you later.",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Veel succes",
+        "english": "Good luck",
+        "sentence": "Heb je een examen? Veel succes!",
+        "sentence_trans": "Do you have an exam? Good luck!",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Beterschap",
+        "english": "Get well soon",
+        "sentence": "Ben je ziek? Beterschap.",
+        "sentence_trans": "Are you sick? Get well soon.",
+        "category": "Health"
+    },
+    {
+        "dutch": "Gefeliciteerd",
+        "english": "Congratulations",
+        "sentence": "Gefeliciteerd met je verjaardag!",
+        "sentence_trans": "Happy birthday!",
+        "category": "Celebration"
+    },
+    {
+        "dutch": "Wat leuk",
+        "english": "How nice",
+        "sentence": "Ga je op vakantie? Wat leuk!",
+        "sentence_trans": "Are you going on vacation? How nice!",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Echt waar?",
+        "english": "Really? Is that true?",
+        "sentence": "Heb je de loterij gewonnen? Echt waar?",
+        "sentence_trans": "Did you win the lottery? Really?",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Rustig aan",
+        "english": "Take it easy",
+        "sentence": "Doe maar rustig aan vandaag.",
+        "sentence_trans": "Just take it easy today.",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Ik heb geen idee",
+        "english": "I have no idea",
+        "sentence": "Waar is hij? Ik heb geen idee.",
+        "sentence_trans": "Where is he? I have no idea.",
+        "category": "Mental"
+    },
+    {
+        "dutch": "Mag ik wat vragen?",
+        "english": "May I ask something?",
+        "sentence": "Pardon, mag ik wat vragen?",
+        "sentence_trans": "Excuse me, may I ask something?",
+        "category": "Communication"
+    },
+    {
+        "dutch": "Ik geloof het wel",
+        "english": "I think so / I believe so",
+        "sentence": "Gaat het regenen? Ik geloof het wel.",
+        "sentence_trans": "Is it going to rain? I think so.",
+        "category": "Mental"
+    },
+    {
+        "dutch": "Ik denk het niet",
+        "english": "I don't think so",
+        "sentence": "Is het al tijd? Ik denk het niet.",
+        "sentence_trans": "Is it time yet? I don't think so.",
+        "category": "Mental"
+    },
+    {
+        "dutch": "Natuurlijk",
+        "english": "Of course",
+        "sentence": "Wil je koffie? Natuurlijk!",
+        "sentence_trans": "Do you want coffee? Of course!",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Absoluut",
+        "english": "Absolutely",
+        "sentence": "Dat is absoluut waar.",
+        "sentence_trans": "That is absolutely true.",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Misschien",
+        "english": "Maybe",
+        "sentence": "Misschien kom ik later.",
+        "sentence_trans": "Maybe I will come later.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Waarschijnlijk",
+        "english": "Probably",
+        "sentence": "Waarschijnlijk gaat het sneeuwen.",
+        "sentence_trans": "It will probably snow.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Klaar",
+        "english": "Ready / Done",
+        "sentence": "Ben je klaar om te gaan?",
+        "sentence_trans": "Are you ready to go?",
+        "category": "Actions"
+    },
+    {
+        "dutch": "Wachten",
+        "english": "Waiting",
+        "sentence": "Ik sta te wachten op de bus.",
+        "sentence_trans": "I am waiting for the bus.",
+        "category": "Actions"
+    },
+    {
+        "dutch": "Te laat",
+        "english": "Too late",
+        "sentence": "De trein is vertrokken, we zijn te laat.",
+        "sentence_trans": "The train has departed, we are too late.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Vroeger",
+        "english": "In the past / Earlier",
+        "sentence": "Vroeger was alles anders.",
+        "sentence_trans": "In the past everything was different.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Nu meteen",
+        "english": "Right now",
+        "sentence": "Ik wil het nu meteen hebben.",
+        "sentence_trans": "I want it right now.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Straks",
+        "english": "Later (soon)",
+        "sentence": "Ik zie je straks.",
+        "sentence_trans": "I'll see you in a bit.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Binnenkort",
+        "english": "Soon",
+        "sentence": "We gaan binnenkort verhuizen.",
+        "sentence_trans": "We are moving soon.",
+        "category": "Time"
+    },
+    {
+        "dutch": "Het spijt me",
+        "english": "I am sorry",
+        "sentence": "Het spijt me dat ik te laat ben.",
+        "sentence_trans": "I am sorry that I am late.",
+        "category": "Apology"
+    },
+    {
+        "dutch": "Sorry",
+        "english": "Sorry",
+        "sentence": "Sorry, ik hoorde je niet.",
+        "sentence_trans": "Sorry, I didn't hear you.",
+        "category": "Apology"
+    },
+    {
+        "dutch": "Pardon",
+        "english": "Excuse me",
+        "sentence": "Pardon, mag ik erlangs?",
+        "sentence_trans": "Excuse me, may I pass?",
+        "category": "Politeness"
+    },
+    {
+        "dutch": "Graag gedaan",
+        "english": "You're welcome",
+        "sentence": "Dankjewel! Graag gedaan.",
+        "sentence_trans": "Thank you! You're welcome.",
+        "category": "Politeness"
+    },
+    {
+        "dutch": "Alsjeblieft",
+        "english": "Please / Here you go",
+        "sentence": "Een koffie, alsjeblieft.",
+        "sentence_trans": "A coffee, please.",
+        "category": "Politeness"
+    },
+    {
+        "dutch": "Dankjewel",
+        "english": "Thank you",
+        "sentence": "Dankjewel voor het cadeau.",
+        "sentence_trans": "Thank you for the gift.",
+        "category": "Politeness"
+    },
+    {
+        "dutch": "Goedemorgen",
+        "english": "Good morning",
+        "sentence": "Goedemorgen allemaal.",
+        "sentence_trans": "Good morning everyone.",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Goedemiddag",
+        "english": "Good afternoon",
+        "sentence": "Goedemiddag, kan ik u helpen?",
+        "sentence_trans": "Good afternoon, can I help you?",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Goedenavond",
+        "english": "Good evening",
+        "sentence": "Goedenavond dames en heren.",
+        "sentence_trans": "Good evening ladies and gentlemen.",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Slaap lekker",
+        "english": "Sleep well",
+        "sentence": "Welterusten en slaap lekker.",
+        "sentence_trans": "Goodnight and sleep well.",
+        "category": "Greetings"
+    },
+    {
+        "dutch": "Hoe laat is het?",
+        "english": "What time is it?",
+        "sentence": "Weet jij hoe laat het is?",
+        "sentence_trans": "Do you know what time it is?",
+        "category": "Time"
+    },
+    {
+        "dutch": "Waar is de wc?",
+        "english": "Where is the toilet?",
+        "sentence": "Mag ik vragen, waar is de wc?",
+        "sentence_trans": "May I ask, where is the toilet?",
+        "category": "Daily Life"
+    },
+    {
+        "dutch": "Ik ben de weg kwijt",
+        "english": "I am lost",
+        "sentence": "Kunt u helpen? Ik ben de weg kwijt.",
+        "sentence_trans": "Can you help? I am lost.",
+        "category": "Daily Life"
+    },
+    {
+        "dutch": "Linksaf",
+        "english": "Turn left",
+        "sentence": "Bij de stoplichten linksaf.",
+        "sentence_trans": "Turn left at the traffic lights.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Rechtsaf",
+        "english": "Turn right",
+        "sentence": "Daarna rechtsaf slaan.",
+        "sentence_trans": "Then turn right.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Stop",
+        "english": "Stop",
+        "sentence": "Stop hier, alsjeblieft.",
+        "sentence_trans": "Stop here, please.",
+        "category": "Directions"
+    },
+    {
+        "dutch": "Pas op",
+        "english": "Watch out",
+        "sentence": "Pas op voor de auto!",
+        "sentence_trans": "Watch out for the car!",
+        "category": "Warning"
+    },
+    {
+        "dutch": "Voorzichtig",
+        "english": "Careful",
+        "sentence": "Wees voorzichtig met dat glas.",
+        "sentence_trans": "Be careful with that glass.",
+        "category": "Warning"
+    },
+    {
+        "dutch": "Help",
+        "english": "Help",
+        "sentence": "Help mij even.",
+        "sentence_trans": "Help me for a second.",
+        "category": "Expressions"
+    },
+    {
+        "dutch": "Politie",
+        "english": "Police",
+        "sentence": "Bel de politie.",
+        "sentence_trans": "Call the police.",
+        "category": "Emergency"
+    },
+    {
+        "dutch": "Brand",
+        "english": "Fire",
+        "sentence": "Er is brand in het gebouw.",
+        "sentence_trans": "There is a fire in the building.",
+        "category": "Emergency"
+    },
+    {
+        "dutch": "Ambulance",
+        "english": "Ambulance",
+        "sentence": "De ambulance komt eraan.",
+        "sentence_trans": "The ambulance is coming.",
+        "category": "Emergency"
+    },
+    {
+        "dutch": "Dokter",
+        "english": "Doctor",
+        "sentence": "Ik moet naar de dokter.",
+        "sentence_trans": "I need to go to the doctor.",
+        "category": "Health"
+    },
+    {
+        "dutch": "Apotheek",
+        "english": "Pharmacy",
+        "sentence": "Is hier een apotheek in de buurt?",
+        "sentence_trans": "Is there a pharmacy nearby?",
+        "category": "Health"
+    }
+]

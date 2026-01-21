@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { HelpCircle } from 'lucide-react';
 import Card from './components/Card';
 import LoginScreen from './components/LoginScreen';
 import StatsModal from './components/StatsModal';
+import HowItWorksModal from './components/HowItWorksModal';
 import { GameEngine } from './utils/GameEngine';
 import { UserManager } from './utils/UserManager';
 
@@ -18,6 +20,7 @@ function App() {
   const [stats, setStats] = useState({ total: 0, learned: 0, needsReview: 0 });
   const [flashMessage, setFlashMessage] = useState(null);
   const [showStats, setShowStats] = useState(false);
+  const [showHowItWorks, setShowHowItWorks] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   // Load Vocabulary on Mount
@@ -115,7 +118,15 @@ function App() {
           <span className="text-gray-400 text-sm border-l border-white/20 pl-4">Hi, {currentUser.username}</span>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 items-center">
+          {/* How It Works Button */}
+          <button
+            onClick={() => setShowHowItWorks(true)}
+            className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors"
+          >
+            <HelpCircle size={18} /> <span className="hidden sm:inline">How it works</span>
+          </button>
+
           <button
             onClick={() => setShowStats(true)}
             className="flex gap-4 text-sm font-medium text-gray-400 bg-card-bg/50 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md hover:bg-card-bg transition-colors"
@@ -124,9 +135,17 @@ function App() {
             <span title="Learned Words">🎓 <span className="text-green-400">{stats.learned}</span>/{stats.total}</span>
             <span title="Word Bank (Needs Review)">🏦 <span className="text-orange-400">{stats.needsReview}</span></span>
           </button>
+
           <button onClick={handleLogout} className="text-xs text-red-400 hover:text-red-300">Logout</button>
         </div>
       </header>
+
+      {/* How It Works Modal */}
+      <AnimatePresence>
+        {showHowItWorks && (
+          <HowItWorksModal onClose={() => setShowHowItWorks(false)} />
+        )}
+      </AnimatePresence>
 
       <main className="flex-1 flex flex-col items-center justify-center w-full max-w-lg z-10 relative">
         <AnimatePresence mode='wait'>
