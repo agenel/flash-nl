@@ -120,14 +120,23 @@ app.post('/api/progress', async (req, res) => {
 // Helper
 
 
-const server = app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+const startServer = async () => {
+    try {
+        await db.initialize();
+        const server = app.listen(PORT, () => {
+            console.log(`Server running on port ${PORT}`);
+        });
 
-server.on('error', (e) => {
-    if (e.code === 'EADDRINUSE') {
-        console.error('ERROR: Port 3001 is already in use!');
-    } else {
-        console.error('Server Error:', e);
+        server.on('error', (e) => {
+            if (e.code === 'EADDRINUSE') {
+                console.error('ERROR: Port 3001 is already in use!');
+            } else {
+                console.error('Server Error:', e);
+            }
+        });
+    } catch (err) {
+        console.error("Failed to start server:", err);
     }
-});
+};
+
+startServer();

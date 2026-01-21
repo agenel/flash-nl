@@ -38,7 +38,10 @@ const seed = async () => {
 
     console.log(`Found ${totalList.length} items to seed.`);
 
-    // 2. Send to DB
+    // 2. Initialize DB first
+    await db.initialize();
+
+    // 3. Send to DB
     try {
         await db.clearAndSeed(totalList);
         console.log("Seeding process completed successfully.");

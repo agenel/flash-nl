@@ -252,7 +252,7 @@ const database = {
     }
 };
 
-// Auto-init on load
-database.initialize();
+// Manual init required
+// database.initialize();
 
 export default database;
