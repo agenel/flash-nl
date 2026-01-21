@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { HelpCircle } from 'lucide-react';
+import { HelpCircle, LogOut } from 'lucide-react';
 import Card from './components/Card';
 import LoginScreen from './components/LoginScreen';
 import StatsModal from './components/StatsModal';
@@ -112,13 +112,13 @@ function App() {
         <div className="absolute bottom-[-10%] right-[-10%] w-80 h-80 bg-dutch-blue/20 rounded-full blur-3xl"></div>
       </div>
 
-      <header className="w-full max-w-4xl flex justify-between items-center py-6 z-10">
-        <div className="flex items-center gap-4">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-dutch-orange to-white bg-clip-text text-transparent">FlashNL</h1>
-          <span className="text-gray-400 text-sm border-l border-white/20 pl-4">Hi, {currentUser.username}</span>
+      <header className="w-full max-w-4xl flex justify-between items-center py-4 md:py-6 z-10 px-4 md:px-0">
+        <div className="flex items-center gap-2 md:gap-4">
+          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-dutch-orange to-white bg-clip-text text-transparent">FlashNL</h1>
+          <span className="hidden md:inline text-gray-400 text-sm border-l border-white/20 pl-4">Hi, {currentUser.username}</span>
         </div>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-2 md:gap-4 items-center">
           {/* How It Works Button */}
           <button
             onClick={() => setShowHowItWorks(true)}
@@ -129,14 +129,17 @@ function App() {
 
           <button
             onClick={() => setShowStats(true)}
-            className="flex gap-4 text-sm font-medium text-gray-400 bg-card-bg/50 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md hover:bg-card-bg transition-colors"
+            className="flex gap-2 md:gap-4 text-xs md:text-sm font-medium text-gray-400 bg-card-bg/50 px-3 py-2 md:px-4 md:py-2 rounded-full border border-white/5 backdrop-blur-md hover:bg-card-bg transition-colors"
             title="Click to view details"
           >
             <span title="Learned Words">🎓 <span className="text-green-400">{stats.learned}</span>/{stats.total}</span>
             <span title="Word Bank (Needs Review)">🏦 <span className="text-orange-400">{stats.needsReview}</span></span>
           </button>
 
-          <button onClick={handleLogout} className="text-xs text-red-400 hover:text-red-300">Logout</button>
+          <button onClick={handleLogout} className="text-xs text-red-400 hover:text-red-300 flex items-center">
+            <span className="hidden md:inline">Logout</span>
+            <LogOut className="md:hidden" size={18} />
+          </button>
         </div>
       </header>
 

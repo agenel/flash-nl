@@ -36,7 +36,7 @@ export default function Card({ data, onResult }) {
     };
 
     return (
-        <div className="perspective-1000 w-full max-w-md min-h-[500px]">
+        <div className="perspective-1000 w-full max-w-md min-h-[420px] md:min-h-[500px]">
             <motion.div
                 className="relative w-full h-full transition-all duration-700 transform-style-3d"
                 initial={false}
@@ -44,10 +44,10 @@ export default function Card({ data, onResult }) {
                 transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
             >
                 {/* Front Face - Quiz Mode */}
-                <div className="absolute w-full h-full backface-hidden bg-card-bg rounded-2xl shadow-xl border border-white/5 flex flex-col p-6">
+                <div className="absolute w-full h-full backface-hidden bg-card-bg rounded-2xl shadow-xl border border-white/5 flex flex-col p-4 md:p-6">
                     <div className="flex-1 flex flex-col items-center justify-center text-center mb-6">
                         <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">{data.category}</span>
-                        <h2 className="text-4xl font-bold text-white mb-2">{data.dutch}</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{data.dutch}</h2>
                         <p className="text-gray-500 text-sm">Select the correct meaning</p>
                     </div>
 
@@ -64,7 +64,7 @@ export default function Card({ data, onResult }) {
                                 <button
                                     key={option.id}
                                     onClick={() => handleOptionSelect(option.id)}
-                                    className={`w-full p-4 rounded-xl border text-left transition-all font-medium ${btnClass}`}
+                                    className={`w-full p-3 md:p-4 rounded-xl border text-left transition-all font-medium ${btnClass}`}
                                     disabled={selectedOption !== null}
                                 >
                                     {option.text}

@@ -12,6 +12,7 @@ export default function LoginScreen({ userManager, onLogin }) {
 
     const [loginForm, setLoginForm] = useState({ email: '', password: '' });
     const [registerForm, setRegisterForm] = useState({ username: '', email: '', password: '' });
+    const [activeMobileTab, setActiveMobileTab] = useState('login');
 
     const handleLoginChange = (e) => setLoginForm({ ...loginForm, [e.target.name]: e.target.value });
     const handleRegisterChange = (e) => setRegisterForm({ ...registerForm, [e.target.name]: e.target.value });
@@ -52,7 +53,7 @@ export default function LoginScreen({ userManager, onLogin }) {
                 className="w-full max-w-5xl bg-card-bg border border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px]"
             >
                 {/* LEFT SIDE: REGISTER */}
-                <div className="flex-1 p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 relative overflow-hidden bg-dutch-blue/20">
+                <div className={`flex-1 p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 relative overflow-hidden bg-dutch-blue/20 ${activeMobileTab === 'register' ? 'block' : 'hidden md:block'}`}>
                     <div className="absolute top-0 left-0 w-full h-full bg-noise opacity-5 pointer-events-none"></div>
 
                     <div className="relative z-10 flex flex-col h-full justify-center">
@@ -130,11 +131,21 @@ export default function LoginScreen({ userManager, onLogin }) {
                                 )}
                             </button>
                         </form>
+
+                        <div className="mt-6 text-center md:hidden">
+                            <p className="text-gray-400 text-sm">Already have an account?</p>
+                            <button
+                                onClick={() => setActiveMobileTab('login')}
+                                className="text-dutch-orange font-bold text-sm hover:text-white transition-colors"
+                            >
+                                Sign In here
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 {/* RIGHT SIDE: LOGIN */}
-                <div className="flex-1 p-8 md:p-12 relative bg-dark-bg">
+                <div className={`flex-1 p-8 md:p-12 relative bg-dark-bg ${activeMobileTab === 'login' ? 'block' : 'hidden md:block'}`}>
                     <div className="absolute top-1/2 right-0 w-64 h-64 bg-dutch-orange/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
                     <div className="relative z-10 flex flex-col h-full justify-center">
@@ -197,6 +208,16 @@ export default function LoginScreen({ userManager, onLogin }) {
                                 )}
                             </button>
                         </form>
+
+                        <div className="mt-6 text-center md:hidden">
+                            <p className="text-gray-400 text-sm">New to FlashNL?</p>
+                            <button
+                                onClick={() => setActiveMobileTab('register')}
+                                className="text-dutch-orange font-bold text-sm hover:text-white transition-colors"
+                            >
+                                Create an Account
+                            </button>
+                        </div>
                     </div>
                 </div>
             </motion.div>
