@@ -7,7 +7,7 @@ import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 console.log("------------------------------------------");
 console.log("   FlashNL Backend Starting...");
