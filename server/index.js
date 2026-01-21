@@ -120,23 +120,28 @@ app.post('/api/progress', async (req, res) => {
 // Helper
 
 
-const startServer = async () => {
-    try {
-        await db.initialize();
-        const server = app.listen(PORT, () => {
-            console.log(`Server running on port ${PORT}`);
-        });
+// Health Check
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok', timestamp: new Date() });
+});
 
-        server.on('error', (e) => {
-            if (e.code === 'EADDRINUSE') {
-                console.error('ERROR: Port 3001 is already in use!');
-            } else {
-                console.error('Server Error:', e);
-            }
+// Start Server Immediately (so Render detects it)
+const server = app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+
+    // Init DB asynchronously
+    db.initialize()
+        .then(() => console.log('Database connection established'))
+        .catch(err => {
+            console.error('Database initialization failed:', err);
+            // Don't exit, keep server alive for logs
         });
-    } catch (err) {
-        console.error("Failed to start server:", err);
+});
+
+server.on('error', (e) => {
+    if (e.code === 'EADDRINUSE') {
+        console.error('ERROR: Port ' + PORT + ' is already in use!');
+    } else {
+        console.error('Server Error:', e);
     }
-};
-
-startServer();
+});
