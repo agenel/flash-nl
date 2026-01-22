@@ -75,7 +75,7 @@ export default function Card({ data, onResult }) {
                 </div>
 
                 {/* Back Face - Result & Details */}
-                <div className="absolute w-full h-full backface-hidden bg-dutch-blue rounded-2xl shadow-xl border border-white/5 flex flex-col items-center justify-center p-8 rotate-y-180">
+                <div className="absolute w-full h-full backface-hidden bg-card-bg rounded-2xl shadow-xl border border-white/5 flex flex-col items-center justify-center p-8 rotate-y-180">
 
                     {/* Result Header */}
                     <div className={`mb-6 p-3 rounded-full ${isCorrect ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'}`}>
