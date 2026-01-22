@@ -46,7 +46,12 @@ export default function LoginScreen({ userManager, onLogin }) {
     };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-dark-bg/95 backdrop-blur-md p-4 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-dark-bg/95 backdrop-blur-md p-4 overflow-y-auto">
+            {/* Main Banner */}
+            <div className="mb-8 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-dutch-blue via-white to-dutch-orange bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]">FlashNL</h1>
+            </div>
+
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}

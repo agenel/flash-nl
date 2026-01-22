@@ -124,7 +124,7 @@ function App() {
 
       <header className="w-full max-w-4xl flex justify-between items-center py-4 md:py-6 z-10 px-4 md:px-0">
         <div className="flex items-center gap-2 md:gap-4">
-          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-dutch-orange to-white bg-clip-text text-transparent">FlashNL</h1>
+          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-dutch-blue via-white to-dutch-orange bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]">FlashNL</h1>
           <span className="hidden md:inline text-gray-400 text-sm border-l border-white/20 pl-4">Hi, {currentUser.username}</span>
         </div>
 

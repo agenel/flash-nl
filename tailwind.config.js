@@ -8,7 +8,7 @@ export default {
         extend: {
             colors: {
                 'dutch-orange': '#FF6200',
-                'dutch-blue': '#1E3765',
+                'dutch-blue': '#2E6FD9',
                 'cream': '#FFFDD0',
                 'dark-bg': '#0F172A',
                 'card-bg': '#1E293B',
