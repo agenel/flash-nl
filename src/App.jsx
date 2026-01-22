@@ -5,6 +5,7 @@ import Card from './components/Card';
 import LoginScreen from './components/LoginScreen';
 import StatsModal from './components/StatsModal';
 import HowItWorksModal from './components/HowItWorksModal';
+import BuyMeACoffee from './components/BuyMeACoffee';
 import { GameEngine } from './utils/GameEngine';
 import { UserManager } from './utils/UserManager';
 
@@ -199,8 +200,9 @@ function App() {
         )}
       </AnimatePresence>
 
-      <footer className="py-6 text-xs text-gray-500 z-10">
-        FlashNL - A2 Dutch Learning
+      <footer className="py-6 text-xs text-gray-500 z-10 flex flex-col items-center gap-4">
+        <span>FlashNL - A2 Dutch Learning</span>
+        <BuyMeACoffee />
       </footer>
     </div>
   )
