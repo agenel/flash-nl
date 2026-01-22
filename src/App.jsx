@@ -28,7 +28,15 @@ function App() {
   useEffect(() => {
     userManager.getVocabulary().then(data => {
       setVocabDetails(data);
-      setIsLoading(false);
+      setVocabDetails(data);
+
+      // Check for existing session
+      userManager.checkForSession().then(user => {
+        if (user) {
+          handleLogin(user); // Reuse login logic to init engine
+        }
+        setIsLoading(false);
+      });
     });
   }, []);
 
@@ -67,6 +75,7 @@ function App() {
   };
 
   const handleLogout = () => {
+    userManager.logout();
     setCurrentUser(null);
     setEngine(null);
     setCurrentItem(null);

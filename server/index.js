@@ -87,6 +87,32 @@ app.post('/api/auth/login', authLimiter, async (req, res) => {
     }
 });
 
+// Get User by ID (for Session Restoration)
+app.get('/api/users/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const user = await db.findUserById(id);
+        if (!user) return res.status(404).json({ error: "User not found" });
+
+        // Get Progress
+        const { progressMap, wordBank } = await db.getUserProgress(user.id);
+
+        res.json({
+            message: "success",
+            user: {
+                id: user.id,
+                username: user.username,
+                email: user.email,
+                progress: progressMap,
+                wordBank: wordBank
+            }
+        });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 // --- Data Routes ---
 
 // Get All Vocabulary

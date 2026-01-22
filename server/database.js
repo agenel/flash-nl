@@ -136,6 +136,11 @@ const database = {
         return rows[0]; // Returns undefined if not found
     },
 
+    findUserById: async (id) => {
+        const rows = await runQuery("SELECT * FROM users WHERE id = ?", [id]);
+        return rows[0];
+    },
+
     getAllVocabulary: async () => {
         return await runQuery("SELECT * FROM vocabulary");
     },

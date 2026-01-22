@@ -29,6 +29,7 @@ export class UserManager {
             if (!response.ok) throw new Error(data.error || 'Registration failed');
 
             this.currentUser = data.user;
+            this._saveSession(this.currentUser.id);
             return this.currentUser;
         } catch (error) {
             console.error('Registration error:', error);
@@ -49,6 +50,7 @@ export class UserManager {
             if (!response.ok) throw new Error(data.error || 'Login failed');
 
             this.currentUser = data.user;
+            this._saveSession(this.currentUser.id);
             return this.currentUser;
         } catch (error) {
             console.error('Login error:', error);
@@ -95,6 +97,37 @@ export class UserManager {
         } catch (error) {
             console.error('Failed to load vocab:', error);
             return [];
+        }
+    }
+
+    // --- Session Management ---
+
+    _saveSession(userId) {
+        localStorage.setItem('flashnl_user_id', userId);
+    }
+
+    logout() {
+        this.currentUser = null;
+        localStorage.removeItem('flashnl_user_id');
+    }
+
+    async checkForSession() {
+        const userId = localStorage.getItem('flashnl_user_id');
+        if (!userId) return null;
+
+        try {
+            const response = await fetch(`${API_URL}/users/${userId}`);
+            if (!response.ok) {
+                // Invalid session (user deleted?)
+                this.logout();
+                return null;
+            }
+            const data = await response.json();
+            this.currentUser = data.user;
+            return this.currentUser;
+        } catch (err) {
+            console.error("Session restore failed:", err);
+            return null;
         }
     }
 }
