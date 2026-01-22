@@ -26,8 +26,8 @@ function App() {
 
   // Load Vocabulary on Mount
   useEffect(() => {
+    // Load Vocabulary and Check Session on Mount
     userManager.getVocabulary().then(data => {
-      setVocabDetails(data);
       setVocabDetails(data);
 
       // Check for existing session
@@ -38,6 +38,13 @@ function App() {
         setIsLoading(false);
       });
     });
+
+    // Keep Alive Ping (Every 10 minutes)
+    const intervalId = setInterval(() => {
+      userManager.keepAlive();
+    }, 10 * 60 * 1000); // 10 minutes
+
+    return () => clearInterval(intervalId);
   }, []);
 
   // When user logs in, init engine

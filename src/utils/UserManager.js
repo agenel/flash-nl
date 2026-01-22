@@ -130,4 +130,17 @@ export class UserManager {
             return null;
         }
     }
+
+    async keepAlive() {
+        try {
+            // Remove '/api' from the end to get the base URL
+            const baseUrl = API_URL.replace(/\/api$/, '');
+            const response = await fetch(`${baseUrl}/health`);
+            if (response.ok) {
+                console.log('Health check: OK');
+            }
+        } catch (err) {
+            console.error('Health check failed:', err);
+        }
+    }
 }
