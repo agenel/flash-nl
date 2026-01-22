@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Ping Render Backend
         run: |
-          curl -I https://flashnl-api.onrender.com/health
+          curl -I https://flash-nl.onrender.com/health
           echo "Ping sent to keep Render alive"
