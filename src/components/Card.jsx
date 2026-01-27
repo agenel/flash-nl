@@ -27,7 +27,7 @@ export default function Card({ data, onResult }) {
             // We notify parent AFTER the user reviews the back of the card, usually via a "Next" button
             // But the requirements imply we just show the result.
             // Let's add a "Next" button on the back to actually proceed.
-        }, 400);
+        }, 150);
     };
 
     const handleNext = (e) => {
@@ -41,7 +41,7 @@ export default function Card({ data, onResult }) {
                 className="relative w-full h-full transition-all duration-700 transform-style-3d"
                 initial={false}
                 animate={{ rotateY: isFlipped ? 180 : 0 }}
-                transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
+                transition={{ duration: 0.3, type: "spring", stiffness: 260, damping: 20 }}
             >
                 {/* Front Face - Quiz Mode */}
                 <div className="absolute w-full h-full backface-hidden bg-card-bg rounded-2xl shadow-xl border border-white/5 flex flex-col p-4 md:p-6">
